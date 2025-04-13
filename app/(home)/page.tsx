@@ -1,11 +1,10 @@
 import styles from "../../styles/home.module.css";
 import Link from "next/link";
+import { API_URL } from "../constants";
 
 export const metadata = {
   title: "Home",
 };
-
-export const API_URL = "https://books-api.nomadcoders.workers.dev/lists";
 
 async function getBook() {
   const response = await fetch(API_URL);

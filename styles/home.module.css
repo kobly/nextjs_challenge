@@ -1,8 +1,48 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 25px;
-  max-width: 90%;
-  width: 100%;
+  width: 800px;
   margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 24px;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  font-family: "Playfair Display", serif;
+}
+.header h1 {
+  font-size: 48px;
+  padding-bottom: 10px;
+}
+.main {
+  background: url("https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c")
+    no-repeat center center;
+  background-size: cover;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 960px;
+  height: 280px;
+}
+
+.item {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  background-color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+
+  border: 2px solid transparent;
+
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.item:hover {
+  box-shadow: 5px 5px 0 rgba(61, 43, 0, 0.3);
 }
